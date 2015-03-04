@@ -1,9 +1,11 @@
 #include <iostream>
-#include <startup.h>
+#include <tools/nomoveorcopy.h>
+#include <startup/startup.h>
 
 using namespace std;
 
 int main() {
-  cout << "First Real Commit!" << endl;
+  tools::NoMove nomove; // Can't be moved.
+  tools::NoCopy nocopy; // Can't be copied.
   startup::startup();
 }

@@ -1,3 +1,9 @@
+set (HEADERS
+  ${HEADERS}
+  ${CMAKE_CURRENT_SOURCE_DIR}/headers
+  ${CMAKE_CURRENT_SOURCE_DIR}/headers/tools
+  PARENT_SCOPE
+)
 
 set (SOURCE
   ${SOURCE}
