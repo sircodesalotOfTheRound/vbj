@@ -1,11 +1,15 @@
-#include <iostream>
-#include <tools/nomoveorcopy.h>
-#include <startup/startup.h>
+#include <verbaj.h>
 
 using namespace std;
 
 int main() {
-  tools::NoMove nomove; // Can't be moved.
-  tools::NoCopy nocopy; // Can't be copied.
-  startup::startup();
+  unsigned char memory[4];
+  jit::JitBufferWriter writer(memory);
+  writer.write_int8('a');
+  writer.write_int8('b');
+  writer.write_int8('c');
+  writer.write_int8(0);
+
+  cout << (char*)writer.memory() << endl;
+
 }
