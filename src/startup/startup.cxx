@@ -1,10 +1,3 @@
-#include <iostream>
-#include <headers/startup/startup.h>
+#include <verbaj.h>
 
 using namespace std;
-
-namespace startup {
-  void startup() {
-    cout << "starting up the shield!" << endl;
-  }
-}

@@ -2,7 +2,9 @@
 #define STARTUP_H
 
 namespace startup {
-  void startup();
+  class Startup {
+
+  };
 }
 
 #endif

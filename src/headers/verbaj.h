@@ -5,8 +5,12 @@
 #include <iostream>
 #include <vector>
 
-// Types
+// Tools
+#include <tools/nomoveorcopy.h>
 #include <types/types.h>
+
+// Types
 #include <jit/memory/writer/JitBufferWriter.h>
+#include <startup/Startup.h>
 
 #endif
