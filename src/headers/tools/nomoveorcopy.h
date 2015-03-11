@@ -1,6 +1,7 @@
-
 #ifndef NOMOVEORCOPY_H
 #define NOMOVEORCOPY_H
+
+#include <verbaj.h>
 
 namespace tools {
   // Disable moving

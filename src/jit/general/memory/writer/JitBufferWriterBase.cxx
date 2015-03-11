@@ -1,9 +1,9 @@
-#include "JitBufferWriter.h"
+#include <verbaj.h>
 
 using namespace jit;
 using namespace std;
 
-jit::JitBufferWriter::JitBufferWriter(void* memory, Endianness endianness) :
+jit::JitBufferWriterBase::JitBufferWriterBase(void* memory, Endianness endianness) :
   memory_((byte*)memory),
   endianess_(endianness),
   index_(0)
@@ -11,23 +11,27 @@ jit::JitBufferWriter::JitBufferWriter(void* memory, Endianness endianness) :
 
 }
 
-void JitBufferWriter::write_int8(byte value) {
+void JitBufferWriterBase::write_opcode(byte value) {
   memory_[index_++] = value;
 }
 
-void JitBufferWriter::write_int16(uint16_t value) {
+void JitBufferWriterBase::write_int8(byte value) {
+  memory_[index_++] = value;
+}
+
+void JitBufferWriterBase::write_int16(uint16_t value) {
   memory_[index_++] = (byte)value;
   memory_[index_++] = (byte)(value >> 8);
 }
 
-void JitBufferWriter::write_int32(uint32_t value) {
+void JitBufferWriterBase::write_int32(uint32_t value) {
   memory_[index_++] = (byte)value;
   memory_[index_++] = (byte)(value >> 8);
   memory_[index_++] = (byte)(value >> 16);
   memory_[index_++] = (byte)(value >> 24);
 }
 
-void JitBufferWriter::write_int64(uint64_t value) {
+void JitBufferWriterBase::write_int64(uint64_t value) {
   memory_[index_++] = (byte) value;
   memory_[index_++] = (byte) (value >> 8);
   memory_[index_++] = (byte) (value >> 16);

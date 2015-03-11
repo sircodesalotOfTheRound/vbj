@@ -1,7 +1,7 @@
 #include <verbaj.h>
 
+using namespace startup;
 
 int main() {
-  using namespace startup;
   Startup vm_startup;
 }
