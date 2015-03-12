@@ -1,6 +1,11 @@
 #ifndef VERBAJ_H
 #define VERBAJ_H
 
+// On Windows
+#ifdef _WIN64
+  #include <Windows.h>
+#endif
+
 // Std Library
 #include <iostream>
 #include <vector>
