@@ -9,7 +9,7 @@ cmake "$(pwd)"
 make
 
 # Copy the binary
-cp bin/verbaj bin/verbaj-x64-osx-1.0.0
+cp bin/verbaj bin/verbaj-linux-1.0.0
 
 # List all files
 ls -l bin
