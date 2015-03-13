@@ -2,10 +2,10 @@
 #include <unistd.h>
 
 using namespace std;
-using namespace intelx64;
 
 startup::Startup::Startup() {
   lit::LitFileInStream lit_reader("somefile");
+  lit::LitFileInt<uint64_t> int64 (lit_reader);
 
-  cout << lit_reader.read_int<uint64_t>() << endl;
+  cout << int64.value() << endl;
 }
