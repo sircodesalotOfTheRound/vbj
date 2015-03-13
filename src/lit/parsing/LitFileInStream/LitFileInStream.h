@@ -11,10 +11,10 @@
 
 namespace lit {
   class LitFileInStream : tools::NoMoveOrCopy {
-    std::ifstream &stream_;
+    std::ifstream stream_;
 
   public:
-    LitFileInStream(std::ifstream &stream);
+    LitFileInStream(std::string path);
     ~LitFileInStream();
 
     template<class T>

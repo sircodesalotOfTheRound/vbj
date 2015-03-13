@@ -4,7 +4,7 @@
 
 #include "LitFileInStream.h"
 
-lit::LitFileInStream::LitFileInStream(std::ifstream &stream) : stream_(stream) {
+lit::LitFileInStream::LitFileInStream(std::string path) : stream_(path) {
 
 }
 
