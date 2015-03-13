@@ -7,7 +7,7 @@
 namespace lit {
   template<size_t size>
   class VerbatimOpCodeBinaryValue {
-    std::array<size, byte> values_;
+    std::array<byte, size> values_;
 
   public:
     VerbatimOpCodeBinaryValue(std::initializer_list<byte> values) : values_(values) { }
