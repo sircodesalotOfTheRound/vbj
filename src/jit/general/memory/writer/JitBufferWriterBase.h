@@ -1,7 +1,7 @@
 #ifndef JITBUFFERWRITERBASE_H
 #define JITBUFFERWRITERBASE_H
 
-#include <verbaj.h>
+#include <types/types.h>
 
 namespace jit {
   enum class Endianness {

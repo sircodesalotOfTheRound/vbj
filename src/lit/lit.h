@@ -1,6 +1,6 @@
 #ifdef LIT_H
-#ifdef LIT_H
+#define LIT_H
 
-#include <lit/opcodes/VerbatimOpCodes.h>
+#include <lit/opcodes/VerbatimOpCodeBinaryValue.h>
 
 #endif

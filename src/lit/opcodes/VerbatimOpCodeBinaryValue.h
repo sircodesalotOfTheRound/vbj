@@ -1,7 +1,7 @@
 #ifndef VERBATIMOPCODES_H
 #define VERBATIMOPCODES_H
 
-#include <headers/types/types.h>
+#include <types/types.h>
 #include <array>
 
 namespace lit {

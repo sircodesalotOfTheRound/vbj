@@ -1,4 +1,4 @@
-#include <verbaj.h>
+#include "JitBufferWriterBase.h"
 
 using namespace jit;
 using namespace std;
