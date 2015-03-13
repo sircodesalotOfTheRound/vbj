@@ -5,4 +5,3 @@ call cd bin
 call dir
 call cd Debug
 call dir
-call copy "C:\Jenkins\workspace\Verbaj Windows x64\bin\Debug\verbaj.exe" "C:\Jenkins\workspace\Verbaj Windows x64\bin\Debug\verbaj-x64-windows-1.0.0.exe"
