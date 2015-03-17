@@ -9,4 +9,4 @@ add_subdirectory(src)
 include_directories(src)
 include_directories(src/headers)
 
-add_executable(verbaj ${SOURCE})
+add_executable(verbaj ${SOURCE} src/headers/os_specific/windows_headers.h)

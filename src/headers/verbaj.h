@@ -1,9 +1,13 @@
 #ifndef VERBAJ_H
 #define VERBAJ_H
 
-// On Windows
+// OS Specific
 #ifdef _WIN64
-  #include <Windows.h>
+  #include <os_specific/windows_headers.h>
+#elif __APPLE__
+  #include <os_specific/mac_headers.h>
+#elif __posix
+  #include <os_specific/posix_headers.h>
 #endif
 
 // Std Library
