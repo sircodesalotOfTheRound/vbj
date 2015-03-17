@@ -1,5 +1,4 @@
 #include <verbaj.h>
-#include <unistd.h>
 
 using namespace std;
 
