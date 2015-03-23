@@ -6,6 +6,7 @@
 #define LITFILEINSTREAM_H
 
 #include <fstream>
+#include <memory>
 #include <types/types.h>
 #include <headers/tools/nomoveorcopy.h>
 
@@ -22,6 +23,14 @@ namespace lit {
       T value;
       stream_.read((char*)&value, sizeof(T));
       return value;
+    }
+
+    std::string read_shortstring() {
+      ssize_t length = read_int<uint16_t>();
+      std::unique_ptr<char> buffer (new char[length]);
+      stream_.read((char*)buffer.get(), length);
+
+      return std::string(buffer.get());
     }
   };
 }

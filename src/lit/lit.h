@@ -3,6 +3,6 @@
 
 #include <lit/opcodes/VerbatimOpCodeBinaryValue.h>
 #include <lit/parsing/LitFileInStream/LitFileInStream.h>
-#include <lit/parsing/readers/ints/LitFileInt.h>
+#include <lit/parsing/sections/LitFileHeader/LitFileHeader.h>
 
 #endif

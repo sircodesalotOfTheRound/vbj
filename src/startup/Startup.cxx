@@ -3,8 +3,9 @@
 using namespace std;
 
 startup::Startup::Startup() {
-  lit::LitFileInStream lit_reader("somefile");
-  lit::LitFileInt<uint64_t> int64 (lit_reader);
+  std::string path = "/Users/sircodesalot/IdeaProjects/Verba/verba_builds/single-source-build.vlit";
+  lit::LitFileInStream lit_reader(path);
+  lit::LitFileHeader header(lit_reader);
 
-  cout << int64.value() << endl;
+  cout << header.file_type() << endl;
 }
