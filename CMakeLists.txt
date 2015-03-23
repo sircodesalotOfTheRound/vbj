@@ -13,4 +13,4 @@ add_subdirectory(src)
 include_directories(src)
 include_directories(src/headers)
 
-add_executable(vbj ${SOURCE})
+add_executable(vbj ${SOURCE} src/runtime/stringtable/StringTable.cxx src/runtime/stringtable/StringTable.h)
