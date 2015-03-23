@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.6)
-project(verbaj)
+project(vbj)
 
 if(NOT WIN32)
   set(CMAKE_CXX_COMPILER /usr/bin/clang++)
@@ -13,4 +13,4 @@ add_subdirectory(src)
 include_directories(src)
 include_directories(src/headers)
 
-add_executable(verbaj ${SOURCE})
+add_executable(vbj ${SOURCE})
