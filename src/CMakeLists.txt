@@ -1,9 +1,7 @@
+add_subdirectory(jit)
+
 set (SOURCE
   ${SOURCE}
-
-  ${CMAKE_CURRENT_SOURCE_DIR}/jit/architectures/intel/memory/IntelJitBufferWriter_x64.cxx
-  ${CMAKE_CURRENT_SOURCE_DIR}/jit/architectures/intel/opcodes/ret/ReturnIntelOpCode_x64.cxx
-  ${CMAKE_CURRENT_SOURCE_DIR}/jit/general/memory/writer/JitBufferWriterBase.cxx
 
   ${CMAKE_CURRENT_SOURCE_DIR}/lit/parsing/LitFileInStream/LitFileInStream.cxx
   ${CMAKE_CURRENT_SOURCE_DIR}/lit/parsing/sections/LitFileHeader/LitFileHeader.cxx

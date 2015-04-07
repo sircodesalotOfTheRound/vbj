@@ -7,10 +7,12 @@ if(NOT WIN32)
 else()
 endif()
 
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY bin)
+set (SOURCE "")
+set (CMAKE_RUNTIME_OUTPUT_DIRECTORY bin)
 
 add_subdirectory(src)
+
 include_directories(src)
 include_directories(src/headers)
 
-add_executable(vbj ${SOURCE} src/runtime/stringtable/StringTable.cxx src/runtime/stringtable/StringTable.h)
+add_executable(vbj ${SOURCE})
