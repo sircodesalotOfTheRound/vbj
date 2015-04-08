@@ -7,8 +7,7 @@
 
 #include <fstream>
 #include <memory>
-#include <types/types.h>
-#include <headers/tools/nomoveorcopy.h>
+#include <verbaj.h>
 
 namespace lit {
   class LitFileInStream : tools::NoMoveOrCopy {

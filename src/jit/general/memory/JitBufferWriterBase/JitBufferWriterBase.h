@@ -2,20 +2,17 @@
 #define JITBUFFERWRITERBASE_H
 
 #include <types/types.h>
+#include <jit/general/memory/MemoryEndianness/MemoryEndianness.h>
 
 namespace jit {
-  enum class Endianness {
-    big_endian,
-    little_endian
-  };
-
+  enum class MemoryEndianness;
   class JitBufferWriterBase {
     byte* memory_;
     size_t index_;
-    Endianness endianess_;
+    MemoryEndianness endianess_;
 
   public:
-    JitBufferWriterBase(void* memory, Endianness endianness=Endianness::little_endian);
+    JitBufferWriterBase(void* memory, MemoryEndianness endianness=MemoryEndianness::little_endian);
 
     void write_opcode(byte value);
     void write_int8(byte value);
@@ -25,7 +22,7 @@ namespace jit {
 
     size_t index() const { return index_; }
     void* memory() const { return (void*)memory_; }
-    Endianness endianness() { return endianess_; }
+    MemoryEndianness endianness() { return endianess_; }
   };
 }
 

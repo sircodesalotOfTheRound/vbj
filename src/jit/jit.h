@@ -1,6 +1,9 @@
 #ifndef JIT_H
 #define JIT_H
 
+#include <types/types.h>
+
+#include <jit/general/memory/MemoryEndianness/MemoryEndianness.h>
 #include <jit/general/memory/JitBufferWriterBase/JitBufferWriterBase.h>
 #include <jit/general/opcodes/OpCodeBase.h>
 

@@ -1,7 +1,7 @@
 #ifndef RETURNINTELOPCODEX64_H
 #define RETURNINTELOPCODEX64_H
 
-#include <types/types.h>
+#include <jit/jit.h>
 
 namespace intelx64 {
   class IntelOpCodeBase_x64;

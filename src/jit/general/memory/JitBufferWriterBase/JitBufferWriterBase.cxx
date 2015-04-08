@@ -3,7 +3,7 @@
 using namespace jit;
 using namespace std;
 
-jit::JitBufferWriterBase::JitBufferWriterBase(void* memory, Endianness endianness) :
+jit::JitBufferWriterBase::JitBufferWriterBase(void* memory, jit::MemoryEndianness endianness) :
   memory_((byte*)memory),
   endianess_(endianness),
   index_(0)
