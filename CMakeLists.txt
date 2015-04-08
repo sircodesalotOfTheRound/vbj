@@ -7,12 +7,11 @@ if(NOT WIN32)
 else()
 endif()
 
-set (SOURCE "")
-set (CMAKE_RUNTIME_OUTPUT_DIRECTORY bin)
-
-add_subdirectory(src)
-
 include_directories(src)
 include_directories(src/headers)
 
-add_executable(vbj ${SOURCE})
+set (CMAKE_RUNTIME_OUTPUT_DIRECTORY bin)
+file(GLOB_RECURSE SOURCES ${PROJECT_SOURCE_DIR}/src/*.cxx)
+
+
+add_executable(vbj ${SOURCES})
